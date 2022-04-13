@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+html{scroll-behavior:smooth;}
+.body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+    margin: 0;}
+h1{font-size: 3.5em;}
+h2{font-size: 2em;}
+h3{font-size: 3em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size:  2.5em;}
+
+button{
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: .5px solid rgba(0,0,0,0.5);
+    box-shadow:2px 2px 10px rgba(0,0,0,0.5);
+    background-color:rgb(113, 178, 239);
+    color:aliceblue
+}
+button:hover{background-color:rgb(78, 132, 133)
+}
+.container{
+    max-width: 1600px;
+    margin:auto;
+}
+.color-acento{color: rgb(241, 155, 169);}
+
+header{
+    background-color:rgb(255, 190, 225);
+    width: auto; height: 100px;
+    
+}
+p.logo{
+    margin:0;
+font-weight: bold;
+color: rgba(25, 25, 27, 0.864);
+font-size: 1.50em;
+align-items: center;
+
+}
+header.container{
+    display: flex;
+    justify-content:baseline;
+    align-items:center;
+    display: grid;
+    grid-template-columns:500px 500px 500px;
+    grid-auto-flow: 50%;
+
+}
+header nav{display: flex;
+flex-direction: column;
+text-align: center;
+padding-bottom: 75px;}
+header a{padding: 10px 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+header a:hover{
+    color: rgba(244, 167, 227, 0.864)
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image:
+url("img/Precios-referencia-medicamentos.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+size-adjust: auto;
+}
+#hero h1{color:white}
+#Somos-Lamar{ display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(255, 241, 255);
+    background: rgb(21, 20, 20);
+    background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}  
+#Somos-Lamar.container{
+    text-align: center;
+    padding: 200px 12px;
+    grid-template-columns: 300px 300px 300px;
+}
+
+#nuestrassucursales{
+        background-color: rgb(177, 160, 246);
+        display:flex;
+        align-items: center;
+        text-align: end;
+        display: grid;
+        grid-template-columns: 8fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+
+
+
+
+
+#nuestrassucursales .container{padding: 100px 0px;}
+#nuestrassucursales .h2{margin-top: 0;}
+#nuestrassucursales .carta{display: grid;
+grid-template-columns:8fr 8fr;
+grid-row: auto;
+}
+.carta:first-child{background-image: linear-gradient
+    (0deg, rgba(0,0,0,0,5)
+    rgba(0,0,0,0,5)),}
+
+.carta:nth-child(2){background-image: linear-gradient
+    (0deg, rgba(0,0,0,0,5)
+    rgba(0,0,0,0,5)),;}
+
+#laboratorios.container{margin: auto;
+    padding-top: 50%;
+}
+#laboratorios{
+    padding: 15%;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+    display: flex;
+align-items: center;
+text-align: center;
+    }
+
+#laboratorios li{margin: 12px 0px;
+padding: auto;
+}
+
+#compra-ya{
+    padding: 100px;
+display: flex;
+flex-direction: column;
+justify-content:flex-end;
+align-items:center;
+text-align: center;
+background-color: rgb(177, 160, 246);
+color:white;
+}
+
+footer{ background-color: rgb(255, 190, 225);
+padding: 50px;
+}
+footer p{
+    margin: 0%;
+    padding: 25px;
+}
+footer .container{
+    height: 20px;
+    align-items: flex-end;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto;
+
+}
+
+
+
+@media(min-width:720px){
+header{position: fixed;
+width: 100%;}
+
+    header{flex-direction: row;
+    justify-content: space-between;}
+
+
+    header nav{flex-direction: row;
+    padding-bottom: 0%;
+    padding-right: 20px;
+}
+#Somos-Lamar.texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    padding: 0px 30px;
+    display: flex;
+}
+
+#Somos-Lamar.img-container{
+    background-image: url("img/lamar.jpg");
+    background-size: cover;
+    background-position: center,center;
+    height: 500px;
+    width: 400px;
+}
+
+
+
